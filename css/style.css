@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 100%;
+}
+body{
+    color: #333;
+    letter-spacing: 0.1cm;
+}
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+li{
+    list-style: none;
+}
+
+
+#header{
+    height: 100px;
+    padding: 40px 0 0 50px;
+}
+
+#header .top-logo{
+    display: block;
+}
+
+h2{
+    margin: 100px auto 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 900;
+}
+.card-wrapper{
+    background-color: #dc3545;
+    height: 350px;
+    padding-top: 50px;
+
+}
+#reason h3{
+    color: #dc3545;
+}
+
+.reason-card{
+    display: flex;
+    width: 47%;
+    background-color: #fff;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.card-item{
+    width: 47%;
+}
+.card-img{
+    width: 47%;
+}
+.bg-danger{
+    margin-top: 120px;
+}
+.reason-card.right{
+    margin: 50px 0 20px auto;
+}
+@media screen and (max-width: 768px) {
+    .bg-danger{
+        margin-top: 70px;
+    } 
+    .card-wrapper {
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 599px) {
+    #reason h3{
+        font-size: 16px;
+    }
+    .reason-card{
+        width: 70%;
+    }
+    .card-item{
+        width: 70%;
+    }
+    .card-img{
+        width: 70%;
+    }
+    .bg-danger{
+        margin-top: none;
+    }
+}
+
+.balloon-wrapper{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+.balloon1-left {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #e0edff;
+    border-radius: 10px;
+  }
+  
+  .balloon1-left:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+  
+  .balloon1-left p {
+    margin: 0;
+    padding: 10px;
+  }
+  .balloon1-right {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 15px 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #e0edff;
+    border-radius: 10px;
+  }
+  
+  .balloon1-right:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-left: 15px solid #e0edff;
+  }
+  
+  .balloon1-right p {
+    margin: 0;
+    padding: 10px;
+  }
+ .balloon1-img{
+     text-align: center;
+ }
+  .balloon1-img img{
+      background-color: lightgrey;
+      border-radius: 50%;
+      width: 70%;
+      height: 70%;
+  }
+  @media screen and (max-width: 768px) {
+    .balloon1-img{
+        margin-top: 50px;
+    }
+    .balloon1-img img{
+        width: 70px;
+        height: 70px;
+    }  
+    .balloon1-img p {
+        font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 599px) {
+    .balloon1-img{
+        margin-top: 80px;
+    }
+    .balloon1-img img{
+        width: 45px;
+        height: 45px;
+    }
+
+    .balloon1-img p {
+          font-size: 12px;
+  }
+  }
+  /* #school{
+    animation: fall 10s infinite linear;
+  } */
+  .bg-img{
+      background-image: url(../img/bg.gif);
+      padding: 10px;
+      margin: 100px auto;
+  }
+  .school-wrap{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 50px auto;
+      gap: 30px;
+      justify-content: center;
+  }
+  .school{
+      background-color: #fff;
+      border-radius: 10px;
+      width: 45%;
+      text-align: center;
+  }
+  .school-item h5{
+      padding-top: 25px;
+  }
+  .school p{
+      margin-top: 10px;
+      padding: 0 40px 20px;
+  }
+
+ @media screen and (max-width: 599px) {
+    .school-wrap{
+        display: block;
+     }
+     .school{
+         width: 100%;
+         margin: 100px auto;
+     }
+}
+#freelesson{
+    text-align: center;
+}
+#freelesson h2{
+    text-align: center;
+    text-decoration: none;
+}
+#freelesson p{
+    text-align: center;
+}
+#freelesson button{
+    margin: 30px auto 100px;
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+@media screen and (max-width: 599px) {
+    #freelesson button{
+        margin: 30px auto 100px;
+        width: 300px;
+        height: 50px;
+    }
+}
+.footer-wrapper{
+    background-color: gray;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-wrapper ul{
+    padding: 30px;
+}
+.footer-wrapper li a{
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+.copy{
+    font-size: 12px;
+    text-align: center;
+}
+
+@media screen and (max-width:599px) {
+    #footer{
+        width: 100%;
+    }
+    .footer-wrapper{
+        display: block;
+        text-align: center;
+    }
+}
