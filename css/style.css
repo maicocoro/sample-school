@@ -79,12 +79,17 @@ h2{
     }
     .reason-card{
         width: 70%;
+        height: 140px;
     }
     .card-item{
         width: 70%;
     }
+    .card-item h3{
+        font-size: 14px;
+    }
     .card-img{
         width: 70%;
+        padding: 5px;
     }
     .bg-danger{
         margin-top: none;
@@ -92,7 +97,7 @@ h2{
 }
 
 .balloon-wrapper{
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     display: flex;
 }
@@ -171,7 +176,15 @@ h2{
         font-size: 14px;
     }
   }
+  @media screen and (max-width: 768px) {
+    .balloon-wrapper{
+        width: 80%;
+    } 
+  }
   @media screen and (max-width: 599px) {
+    .balloon-wrapper{
+        width: 80%;
+    }
     .balloon1-img{
         margin-top: 80px;
     }
